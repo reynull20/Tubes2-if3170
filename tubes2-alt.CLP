@@ -139,6 +139,7 @@
 ; Worst Concave Points
 ; ====================
 (defrule worst-concave-points-rule
+	(exists (condition (name worst-perimeter) (value ?)))
 	(condition (name worst-texture) (value ?value&
 	:(numberp ?value)&
 	:(<= ?value 25.65)))
@@ -369,9 +370,9 @@
 )
 
 (defrule good-goal-from-mean-radius-depth5
-	(condition (name perimeter-error) (value ?value&
-		:(numberp ?value)&
-		:(<= ?value 1.56)
+	(condition (name perimeter-error) (value ?value2&
+		:(numberp ?value2)&
+		:(<= ?value2 1.56)
 	))
 	(condition (name mean-radius) (value ?value&
 		:(numberp ?value)&
