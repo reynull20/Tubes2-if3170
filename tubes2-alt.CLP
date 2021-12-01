@@ -175,7 +175,7 @@
 			:(<= ?value 16.83)
 		))
 =>
-	(printout t "Berapa radius error-nya? ")
+	(printout t crlf "Berapa radius error-nya? ")
 	(assert (condition (name radius-error) (value (read))))
 )
 
@@ -188,7 +188,7 @@
 		:(<= ?value 0.63)
 	))
 =>
-	(printout t "Berapa worst texture-nya? ")
+	(printout t crlf "Berapa worst texture-nya? ")
 	(assert (condition (name worst-texture) (value (read))))
 )
 
@@ -218,7 +218,7 @@
 		:(> ?value 30.15)
 	))
 =>
-	(printout t "Berapa worst area-nya? ")
+	(printout t crlf "Berapa worst area-nya? ")
 	(assert (condition (name worst-area) (value (read))))
 )
 
@@ -240,7 +240,7 @@
 		:(> ?value 641.60)
 	))
 =>
-	(printout t "Berapa mean radius-nya? ")
+	(printout t crlf "Berapa mean radius-nya? ")
 	(assert (condition (name mean-radius) (value (read))))
 )
 
@@ -270,7 +270,7 @@
 		:(<= ?value2 13.45)
 	))
 =>
-	(printout t "Berapa mean texture-nya? ")
+	(printout t crlf "Berapa mean texture-nya? ")
 	(assert (condition (name mean-texture) (value (read))))
 )
 
@@ -308,7 +308,7 @@
 			:(> ?value 0.63)
 		))
 =>
-	(printout t "Berapa mean smoothness-nya? ")
+	(printout t crlf "Berapa mean smoothness-nya? ")
 	(assert (condition (name mean-smoothness) (value (read))))
 )
 
@@ -343,7 +343,7 @@
 		:(> ?value 25.65)
 	))
 =>
-	(printout t "Berapa perimeter error-nya? ")
+	(printout t crlf "Berapa perimeter error-nya? ")
 	(assert (condition (name perimeter-error) (value (read))))
 )
 
@@ -365,7 +365,7 @@
 		:(<= ?value 1.56)
 	))
 =>
-	(printout t "Berapa mean radius-nya? ")
+	(printout t crlf "Berapa mean radius-nya? ")
 	(assert (condition (name mean-radius) (value (read))))
 )
 
